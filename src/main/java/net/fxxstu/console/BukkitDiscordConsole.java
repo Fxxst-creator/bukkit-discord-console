@@ -1,5 +1,9 @@
 package net.fxxstu.console;
 
+/*
+# 26/09/2022
+*/
+
 import lombok.Getter;
 import net.fxxstu.console.discord.DiscordApplication;
 import org.bukkit.Bukkit;
@@ -33,4 +37,8 @@ public class BukkitDiscordConsole extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("§a[bukkit-discord-console] §fBot §9'" + discordApplication.getJda().getSelfUser().getAsTag() + "' §fonline!");
         Bukkit.getConsoleSender().sendMessage("§a[bukkit-discord-console] §fOpen source: §agithub.com/Fxxst-creator/bukkit-discord-console");
     }
+
+   public void onDisable() {
+        Bukkit.getConsoleSender().sendMessage("§a[bukkit-discord-console] §fPlugin has disabled! §a[v" + getDescription().getVersion() + "]");
+   }
 }
