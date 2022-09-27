@@ -12,7 +12,7 @@ public class UserMentionClientListener extends ListenerAdapter {
         String[] args = event.getMessage().getContentDisplay().split(" ");
 
         if (args.length == 1 && event.getMessage().getMentionedUsers().get(0).getId().equals(event.getJDA().getSelfUser().getId())) {
-            event.getChannel().sendMessage(":eyes: **|** " + event.getAuthor().getAsMention() + ", This project is open source. **Contribute pull requests**: https://github.com/SmartBR/bukkit-discord-console.").queue();
+            event.getChannel().sendMessage(":eyes: **|** " + event.getAuthor().getAsMention() + ", This project is open source. **Contribute pull requests**: https://github.com/Fxxst-creator/bukkit-discord-console.").queue();
         }
     }
 }
