@@ -8,7 +8,7 @@ import net.fxxstu.console.discord.precommand.executor.DiscordCommandExecutor;
 public class PingCMD extends DiscordCommandExecutor {
 
     @Override
-    @Command(name = "ping", description = "Verificar a latência do bot.")
+    @Command(name = "ping", description = "Analisar a latência do bot.")
     public void execute(BukkitDiscordConsole plugin, User user, Message message, String label, String[] args) {
         long ping = message.getJDA().getGatewayPing();
 
